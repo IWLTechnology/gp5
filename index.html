@@ -9,6 +9,7 @@
     function gp5() {
       document.getElementById('outputProg').value = "0";
       document.getElementById('outputProg').max = "100";
+      document.getElementById('outputPerc').innerHTML = "0%";
       var op = "";
       var mx = parseInt(document.getElementById('max').value);
       document.getElementById('outputProg').max = (mx * mx * 8 * 8).toString();
@@ -23,6 +24,7 @@
       }
       document.getElementById('output').value = op;
       document.getElementById('output2').innerHTML = op;
+      document.getElementById('outputPerc').innerHTML = "100%";
     }
     function cp() {
       var copyText = document.getElementById("output");
